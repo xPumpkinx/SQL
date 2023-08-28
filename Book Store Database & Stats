@@ -1,0 +1,15 @@
+create table books (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity INTEGER );
+INSERT INTO books VALUES (1, "INUYASHA", 9.99, 5);
+INSERT INTO books VALUES (2, "DGRAYMAN",7.99, 3);
+INSERT INTO books VALUES (3, "SOUL EATER", 12.99 , 4);
+INSERT INTO books VALUES (4, "DOROHEDORO", 11.99 , 3);
+INSERT INTO books VALUES (5,"HUNTERXHUNTER", 9.99, 2);
+SELECT * FROM books
+order by price desc;
+SELECT SUM (quantity) FROM books
+
+
+
+First I created a book store database then listed the items I have for sale.
+After listing the Title of the books, Price & quantity I organized the books by price in descending order 
+Next, I totalled the sum from the quantity of books I have for sale in my book store
